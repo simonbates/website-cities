@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Co-designing Inclusive Cities - Hackathon Project #2: Tranquil Refuge</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/website-cities/dev/js/lib/infusion/src/framework/preferences/css/Enactors.css" />
+    <link rel="stylesheet" type="text/css" href="/website-cities/dev/js/lib/infusion/src/framework/preferences/css/PrefsEditor.css" />
+    <link rel="stylesheet" type="text/css" href="/website-cities/dev/js/lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
+    <script src="/website-cities/dev/js/lib/infusion/infusion-custom.js"></script>
+    <link rel="stylesheet" href="/website-cities/dev/css/style.css">
+</head>
+<body>
+    <!-- BEGIN markup for Preference Editor -->
+<div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
+    <!--
+        This div is for the sliding panel bar that shows and hides the Preference Editor controls in the mobile view.
+        A separate panel bar for mobile displays is needed to preserver the correct tab order.
+    -->
+    <div class="fl-panelBar fl-panelBar-smallScreen">
+        <span class="fl-prefsEditor-buttons">
+            <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> Show/Hide</button>
+            <button class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+        </span>
+    </div>
+
+    <!-- This is the div that will contain the Preference Editor component -->
+    <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+
+    <!--
+        This div is for the sliding panel bar that shows and hides the Preference Editor controls in the desktop view.
+        A separate panel bar for desktop displays is needed to preserver the correct tab order.
+    -->
+    <div class="fl-panelBar fl-panelBar-wideScreen">
+        <span class="fl-prefsEditor-buttons">
+            <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> Show/Hide</button>
+            <button class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+        </span>
+    </div>
+</div>
+<!-- END markup for Preference Editor -->
+
+
+    
+<div id="body">
+    <div style="padding: 2em 5em;">
+        <h1>Hackathon Project #2: Tranquil Refuge</h1>
+    </div>
+    <div style="background-color: #F2F2F2;">
+        <div class="flc-toc-tocContainer toc"></div>
+        <div style="max-width: 50em; padding: 2em 5em; line-height: 1.5em; font-size: 1.1em;">
+            
+
+<h2 id="idea">Idea</h2>
+
+<p>A place where people who need a physical or sensory reprieve from the environment can go to rest and recharge. Potential to give priority access to people with accessibility needs.</p>
+
+<h2 id="use-cases">Use cases</h2>
+
+<ul>
+<li>An 8 month pregnant woman has been visiting a street festival in Quayside, and it’s over 30 degrees out. She desperately needs to sit down and cool off. She’s also ready to go home, but doesn’t know the best way to get out of the festival and find the public transportation option that will get her home the fastest.</li>
+<li>A parent is visiting Quayside with their child who is on the autism spectrum. They know that their child is only comfortable being out in a loud and busy environment for 15 minutes at a time and needs a quiet, restful, low-lit place to chill out and recharge between activities.</li>
+<li>A person who is Deaf has been signing with their friends outside on the grass in the hot sun for a long time; they need a place to be able to rest and close their eyes without worrying about personal safety.</li>
+<li>A teenager who uses a mobility device notices their chair is running low on batteries. They need somewhere out of the way to charge their chair. As they start looking around for a place to go, they realize their phone is running low on batteries too - they’ll need to find somewhere to go to find an outlet for that too.</li>
+</ul>
+
+<h2 id="this-prototype-must-include">This prototype must include</h2>
+
+<ul>
+<li>A life size model of a physically enclosed pod-like structure.
+
+<ul>
+<li>This model must accommodate all kinds of mobility devices (scooters, chairs, motorized personal vehicles, bikes, strollers, etc). There should not be a curb to entry; if there is a step, it should have a ramp.</li>
+</ul></li>
+<li>Seating</li>
+<li>Mockup of an information screen with illustrative information (e.g. map of the area with food and restrooms)</li>
+<li>Audible, conversational location-aware smart device to answer questions (e.g. Google home to direct person to the closest coffee shop)</li>
+<li>Low-stimulus colors and adjustable lighting and sound options (e.g. white noise from Google Home).</li>
+<li>A way to give feedback on the space</li>
+<li>Text / symbol based signage and/or audible messaging that communicates the rules and norms for using the space in plain English.</li>
+</ul>
+
+<h2 id="this-prototype-could-optionally-include">This prototype could optionally include</h2>
+
+<ul>
+<li>Leave space for potential for a washroom (think about how to integrate a public washroom, no full prototype needed)</li>
+<li>Soundproofing or representation of soundproofing</li>
+</ul>
+
+<h2 id="major-risks-to-work-on-what-do-we-hope-to-learn">Major risks to work on/ What do we hope to learn</h2>
+
+<ul>
+<li>How many people should this fit? What if you have 3 kids?</li>
+<li>Is there a lock? How do you tell if someone is inside? Do you have to badge in?</li>
+<li>How big should this be? (Recall physical accessibility).</li>
+<li>How could we deploy this with step-free access?</li>
+<li>Should this be bookable? Can you book this upon arrival even if someone is inside and get a notification to come back when your reservation is there. How to notify someone inside that there’s someone waiting?</li>
+<li>Should there be a time limit on use?
+
+<ul>
+<li>If yes, how do you enforce it / signal time is up?</li>
+</ul></li>
+<li>What happens if someone is using it and you really need it? What kinds of social norms should exist for giving up your seat to someone in greater need? How to do this in a respectful nonintrusive way?</li>
+<li>Should some spaces be reserved for people with accessibility needs? (e.g. front seats on bus)</li>
+<li>What does the outside have to look like? Does it have windows? Is it translucently panelled?</li>
+<li>How does this get cleaned? Can it be self-cleaning?</li>
+<li>Is there a way to prevent illicit use through the design?</li>
+</ul>
+
+<h2 id="hardware-materials-needed">Hardware/materials needed</h2>
+
+<ul>
+<li>Large foam core boards (at least 8&rsquo;x5&rsquo;) or wood for frame</li>
+<li>Foam blocks to serve as bricks and also for seating</li>
+<li>Something to represent a table (foldable table) (maybe foam core)</li>
+<li>Marker</li>
+<li>Tablet or something representing a tablet</li>
+<li>Tarp</li>
+<li>Hinges for foamcore</li>
+<li>Smart device (Google Home)</li>
+<li>Charging port (or something representing a charging station)</li>
+</ul>
+
+<h2 id="special-skills-needed">Special skills needed</h2>
+
+<ul>
+<li>Google Home conversational program (apps for Google Home)</li>
+<li>Someone who can move blocks, wood and foam core around.</li>
+</ul>
+
+<p><a href="/website-cities/dev/ideas/hackathon-project-descriptions/">Back to Hackathon Project Descriptions</a></p>
+
+
+        </div>
+    </div>
+
+    <div id="footer">
+    <div class="logoContainer">
+        <a href="http://idrc.ocadu.ca/" class="logo-idrc" title="Inclusive Design Research Centre">Inclusive Design Research Centre</a>
+    </div>
+    <p>This website is maintained and created by the <a href="https://idrc.ocadu.ca/">Inclusive Design Research Centre</a>.<br />
+    It is distributed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International license</a>.</p>
+</div>
+
+</div>
+
+
+
+    <!-- Initialise UIO -->
+<script>
+    $(document).ready(function () {
+        var uio = fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
+            terms: {
+                "templatePrefix": "\/website-cities\/dev\/js\/lib\/infusion\/src\/framework\/preferences\/html",
+                "messagePrefix": "\/website-cities\/dev\/js\/lib\/infusion\/src\/framework\/preferences\/messages"
+            },
+            "tocTemplate": "\/website-cities\/dev\/js\/lib\/infusion\/src\/components\/tableOfContents\/html\/TableOfContents.html",
+            "ignoreForToC": {
+                "overviewPanel": ".flc-overviewPanel"
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

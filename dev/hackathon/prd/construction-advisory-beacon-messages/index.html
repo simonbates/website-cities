@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Co-designing Inclusive Cities - Hackathon Project #3: Construction Advisory Beacon Messages</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/website-cities/dev/js/lib/infusion/src/framework/preferences/css/Enactors.css" />
+    <link rel="stylesheet" type="text/css" href="/website-cities/dev/js/lib/infusion/src/framework/preferences/css/PrefsEditor.css" />
+    <link rel="stylesheet" type="text/css" href="/website-cities/dev/js/lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
+    <script src="/website-cities/dev/js/lib/infusion/infusion-custom.js"></script>
+    <link rel="stylesheet" href="/website-cities/dev/css/style.css">
+</head>
+<body>
+    <!-- BEGIN markup for Preference Editor -->
+<div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
+    <!--
+        This div is for the sliding panel bar that shows and hides the Preference Editor controls in the mobile view.
+        A separate panel bar for mobile displays is needed to preserver the correct tab order.
+    -->
+    <div class="fl-panelBar fl-panelBar-smallScreen">
+        <span class="fl-prefsEditor-buttons">
+            <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> Show/Hide</button>
+            <button class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+        </span>
+    </div>
+
+    <!-- This is the div that will contain the Preference Editor component -->
+    <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+
+    <!--
+        This div is for the sliding panel bar that shows and hides the Preference Editor controls in the desktop view.
+        A separate panel bar for desktop displays is needed to preserver the correct tab order.
+    -->
+    <div class="fl-panelBar fl-panelBar-wideScreen">
+        <span class="fl-prefsEditor-buttons">
+            <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> Show/Hide</button>
+            <button class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+        </span>
+    </div>
+</div>
+<!-- END markup for Preference Editor -->
+
+
+    
+<div id="body">
+    <div style="padding: 2em 5em;">
+        <h1>Hackathon Project #3: Construction Advisory Beacon Messages</h1>
+    </div>
+    <div style="background-color: #F2F2F2;">
+        <div class="flc-toc-tocContainer toc"></div>
+        <div style="max-width: 50em; padding: 2em 5em; line-height: 1.5em; font-size: 1.1em;">
+            
+
+<h2 id="idea">Idea</h2>
+
+<p>An advisory message sent from a beacon informing people of construction impediment(s) on the path.</p>
+
+<h2 id="use-cases">Use cases</h2>
+
+<ul>
+<li>A user who is blind uses Blindsquare to hear audio beacon messages as she moves through the city. She walks down a street she’s taken many times before, but there is now construction. The beacon on that street that normally says “30m ahead is the No Frills Grocery Store” has detected that there is construction and rewrites the message to say “Construction ahead. Follow temporary construction path around to your left. 30m ahead is the No Frills Grocery Store.”</li>
+</ul>
+
+<h2 id="this-prototype-must-include">This prototype must include</h2>
+
+<ul>
+<li>The ability to recognize construction in a photo (either from an existing model or by training a model on generated or self-taken images with construction or not - doesn’t have to be perfect)</li>
+<li>The ability to autogenerate a message about the construction and (optionally) how to get around it.</li>
+<li>Distance of construction from the user.</li>
+<li>Test your construction detection on any given photo.</li>
+<li>Assume the user is looking/moving in the same direction as the beacon’s camera.</li>
+</ul>
+
+<h2 id="this-prototype-does-not-need-to-include">This prototype does not need to include</h2>
+
+<ul>
+<li>You don’t need to actually push your messages to the beacon or add a real camera.</li>
+<li>Ability for beacon to take the image - assume that you have a bunch of pictures that the beacon has taken 1x/day (you can take these with a phone).</li>
+<li>Orientation (left or right) of construction from the user, since beacons are omnidirectional.</li>
+</ul>
+
+<h2 id="this-prototype-could-optionally-include">This prototype could optionally include</h2>
+
+<ul>
+<li>The ability to describe how to get around the construction</li>
+</ul>
+
+<h2 id="major-risks-to-work-on-what-do-we-hope-to-learn">Major risks to work on/ What do we hope to learn</h2>
+
+<ul>
+<li>Is it possible to reliably detect construction?</li>
+<li>Where should beacons be placed in a street environment such that they could get good pictures of construction occurring on the sidewalk?</li>
+<li>Is it possible to generate a useful descriptive message about the construction that a user who is blind or partially sighted could use to get around the construction?</li>
+<li>How can you determine how far the construction is from the beacon (user)?</li>
+</ul>
+
+<h2 id="hardware-materials-needed">Hardware/materials needed</h2>
+
+<ul>
+<li>Beacon</li>
+<li>Computer</li>
+<li>Images of construction and not construction</li>
+</ul>
+
+<h2 id="special-skills-needed">Special skills needed</h2>
+
+<ul>
+<li>Machine learning</li>
+<li>Programming</li>
+</ul>
+
+<p><a href="/website-cities/dev/ideas/hackathon-project-descriptions/">Back to Hackathon Project Descriptions</a></p>
+
+
+        </div>
+    </div>
+
+    <div id="footer">
+    <div class="logoContainer">
+        <a href="http://idrc.ocadu.ca/" class="logo-idrc" title="Inclusive Design Research Centre">Inclusive Design Research Centre</a>
+    </div>
+    <p>This website is maintained and created by the <a href="https://idrc.ocadu.ca/">Inclusive Design Research Centre</a>.<br />
+    It is distributed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International license</a>.</p>
+</div>
+
+</div>
+
+
+
+    <!-- Initialise UIO -->
+<script>
+    $(document).ready(function () {
+        var uio = fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
+            terms: {
+                "templatePrefix": "\/website-cities\/dev\/js\/lib\/infusion\/src\/framework\/preferences\/html",
+                "messagePrefix": "\/website-cities\/dev\/js\/lib\/infusion\/src\/framework\/preferences\/messages"
+            },
+            "tocTemplate": "\/website-cities\/dev\/js\/lib\/infusion\/src\/components\/tableOfContents\/html\/TableOfContents.html",
+            "ignoreForToC": {
+                "overviewPanel": ".flc-overviewPanel"
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
