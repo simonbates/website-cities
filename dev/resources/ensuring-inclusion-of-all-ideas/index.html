@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ensuring inclusion of all ideas - Co-designing Inclusive Cities</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/website-cities/dev/js/lib/infusion/src/framework/preferences/css/Enactors.css" />
+    <link rel="stylesheet" type="text/css" href="/website-cities/dev/js/lib/infusion/src/framework/preferences/css/PrefsEditor.css" />
+    <link rel="stylesheet" type="text/css" href="/website-cities/dev/js/lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
+    <script src="/website-cities/dev/js/lib/infusion/infusion-custom.js"></script>
+    <link rel="stylesheet" href="/website-cities/dev/css/style.css">
+</head>
+<body>
+    <!-- BEGIN markup for Preference Editor -->
+<div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
+    <!--
+        This div is for the sliding panel bar that shows and hides the Preference Editor controls in the mobile view.
+        A separate panel bar for mobile displays is needed to preserver the correct tab order.
+    -->
+    <div class="fl-panelBar fl-panelBar-smallScreen">
+        <span class="fl-prefsEditor-buttons">
+            <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> Show/Hide</button>
+            <button class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+        </span>
+    </div>
+
+    <!-- This is the div that will contain the Preference Editor component -->
+    <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+
+    <!--
+        This div is for the sliding panel bar that shows and hides the Preference Editor controls in the desktop view.
+        A separate panel bar for desktop displays is needed to preserver the correct tab order.
+    -->
+    <div class="fl-panelBar fl-panelBar-wideScreen">
+        <span class="fl-prefsEditor-buttons">
+            <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> Show/Hide</button>
+            <button class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+        </span>
+    </div>
+</div>
+<!-- END markup for Preference Editor -->
+
+
+    
+<div id="body">
+    <div id="ideasHeader">
+    <div class="ideasHeaderContainer">
+        <div class="ideasHeaders"><h1><a href="/website-cities/dev/">Co-designing Inclusive Cities</a></h1></div>
+        <div class="imageContainerIdeas"><img src="/website-cities/dev/images/birds.png" class="img" alt="" /></div>
+    </div>
+</div>
+
+    <div class="navbar">
+    <div
+    class="navbar-section "><a href="/website-cities/dev/">HOME</a></div><div
+
+    class="navbar-section navbar-section-current"><a href="/website-cities/dev/resources/">RESOURCES</a></div><div
+
+    class="navbar-section "><a href="/website-cities/dev/blog/">BLOG</a></div>
+</div>
+
+
+    <div class="resourcePageTitleSection reflection">
+        <div class="resourcePageFormatIcon">
+    <img src="/website-cities/dev/images/Fish_Icon.svg" alt="Reflection">
+
+</div><div
+        class="resourcePageTitleAndDescription">
+            <h2>Ensuring inclusion of all ideas</h2>
+            <div class="resourcePageDescription">Inclusion of all ideas was difficult sometimes due to lack of context, limited or non-legible notes.</div>
+        </div>
+    </div>
+
+    <div class="flc-toc-tocContainer toc"></div>
+
+    <div class="resourcePageContentContainer">
+        <div class="resourcePageContent">
+            
+
+<p>Synthesizing the documented notes was sometimes very challenging as we lacked the context behind the ideas generated. This was particularly difficult when organizing information from the embedded co-design sessions that were conducted by our partner organizations and without our team’s presence. In either case, we were not fully aware of the participants attitude towards the topics and their group discussions. In addition, many groups did not properly document their discussions, which led to sporadic notes that were difficult to interpret and connect to more concrete ideas.</p>
+
+<p>To organize information and ensure outlier data is included in our final reports, our team developed a consistent process of digitizing and interpreting participant information. The information was organized into tables based on similar themes that emerged when reading through the information. In addition, separate categories were created to capture outliers and any other information that didn’t conform to any of the emerging themes. Each member of the team reviewed the information, discussed how the information was synthesized, achieved consensus regarding the outcomes, and made sure all ideas are captured in the final reports. The final reports were published on our website and shared with participants directly to solicit their feedback about the results.</p>
+
+<h3 id="try">TRY</h3>
+
+<ul>
+<li>Develop a consistent process of organizing information in collaboration with the team.</li>
+<li>Use a documenting system that provides open access to all members of the team for their review and iterations, such as shared Google documents and Google sheets.</li>
+<li>As a team, discuss the collected information and come to a consensus on how information is interpreted.</li>
+<li>Incorporate all ideas generated by the participants and avoid “averaging” the ideas when organizing into categories.</li>
+<li>Develop separate categories for “outlier” ideas to ensure they get included.</li>
+</ul>
+
+        </div>
+    </div>
+
+    
+        <div class="resourcePageRelatedResources">
+            <h3>Related Resources</h3>
+            <div class="resourcesCard reflection">
+                        <div class="resourcesCardHeader">
+    <img src="/website-cities/dev/images/Fish_Icon.svg" alt="Reflection">
+
+</div>
+                        <div class="resourcesCardTitle"><a href="/website-cities/dev/resources/challenges-of-facilitating-diverse-groups/">Challenges of facilitating diverse groups</a></div>
+                    </div><div class="resourcesCard tool">
+                        <div class="resourcesCardHeader">
+    <img src="/website-cities/dev/images/Cat_Icon.svg" alt="Tool">
+
+</div>
+                        <div class="resourcesCardTitle"><a href="/website-cities/dev/resources/individual-group-all/">Individual, group, all</a></div>
+                    </div>
+        </div>
+    
+
+    <div id="footer">
+    <div class="logoContainer">
+        <a href="http://idrc.ocadu.ca/" class="logo-idrc" title="Inclusive Design Research Centre">Inclusive Design Research Centre</a>
+    </div>
+    <p>This website is maintained and created by the <a href="https://idrc.ocadu.ca/">Inclusive Design Research Centre</a>.<br />
+    It is distributed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International license</a>.</p>
+</div>
+
+</div>
+
+
+    <!-- Initialise UIO -->
+<script>
+    $(document).ready(function () {
+        var uio = fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
+            terms: {
+                "templatePrefix": "\/website-cities\/dev\/js\/lib\/infusion\/src\/framework\/preferences\/html",
+                "messagePrefix": "\/website-cities\/dev\/js\/lib\/infusion\/src\/framework\/preferences\/messages"
+            },
+            "tocTemplate": "\/website-cities\/dev\/js\/lib\/infusion\/src\/components\/tableOfContents\/html\/TableOfContents.html",
+            "ignoreForToC": {
+                "overviewPanel": ".flc-overviewPanel"
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

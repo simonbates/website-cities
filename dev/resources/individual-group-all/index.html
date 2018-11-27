@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Individual, group, all - Co-designing Inclusive Cities</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/website-cities/dev/js/lib/infusion/src/framework/preferences/css/Enactors.css" />
+    <link rel="stylesheet" type="text/css" href="/website-cities/dev/js/lib/infusion/src/framework/preferences/css/PrefsEditor.css" />
+    <link rel="stylesheet" type="text/css" href="/website-cities/dev/js/lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
+    <script src="/website-cities/dev/js/lib/infusion/infusion-custom.js"></script>
+    <link rel="stylesheet" href="/website-cities/dev/css/style.css">
+</head>
+<body>
+    <!-- BEGIN markup for Preference Editor -->
+<div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
+    <!--
+        This div is for the sliding panel bar that shows and hides the Preference Editor controls in the mobile view.
+        A separate panel bar for mobile displays is needed to preserver the correct tab order.
+    -->
+    <div class="fl-panelBar fl-panelBar-smallScreen">
+        <span class="fl-prefsEditor-buttons">
+            <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> Show/Hide</button>
+            <button class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+        </span>
+    </div>
+
+    <!-- This is the div that will contain the Preference Editor component -->
+    <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+
+    <!--
+        This div is for the sliding panel bar that shows and hides the Preference Editor controls in the desktop view.
+        A separate panel bar for desktop displays is needed to preserver the correct tab order.
+    -->
+    <div class="fl-panelBar fl-panelBar-wideScreen">
+        <span class="fl-prefsEditor-buttons">
+            <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> Show/Hide</button>
+            <button class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+        </span>
+    </div>
+</div>
+<!-- END markup for Preference Editor -->
+
+
+    
+<div id="body">
+    <div id="ideasHeader">
+    <div class="ideasHeaderContainer">
+        <div class="ideasHeaders"><h1><a href="/website-cities/dev/">Co-designing Inclusive Cities</a></h1></div>
+        <div class="imageContainerIdeas"><img src="/website-cities/dev/images/birds.png" class="img" alt="" /></div>
+    </div>
+</div>
+
+    <div class="navbar">
+    <div
+    class="navbar-section "><a href="/website-cities/dev/">HOME</a></div><div
+
+    class="navbar-section navbar-section-current"><a href="/website-cities/dev/resources/">RESOURCES</a></div><div
+
+    class="navbar-section "><a href="/website-cities/dev/blog/">BLOG</a></div>
+</div>
+
+
+    <div class="resourcePageTitleSection tool">
+        <div class="resourcePageFormatIcon">
+    <img src="/website-cities/dev/images/Cat_Icon.svg" alt="Tool">
+
+</div><div
+        class="resourcePageTitleAndDescription">
+            <h2>Individual, group, all</h2>
+            <div class="resourcePageDescription">This tool enables different levels of participation from individual reflections to group discussion.</div>
+        </div>
+    </div>
+
+    <div class="flc-toc-tocContainer toc"></div>
+
+    <div class="resourcePageContentContainer">
+        <div class="resourcePageContent">
+            
+
+<p>This tool is inspired by the <a href="http://www.liberatingstructures.com/1-1-2-4-all/">liberating structures “1 2 4 all approach”</a> developed by Henri Lipmanowicz and Keith McCandless. It encourages participants in collaborative settings to first spend some time on an activity individually and then join a small group to discuss their perspectives and build upon each others’ ideas. Finally each small group selects a few ideas to share with the other groups participating in the collaborative activity. Giving participants individual time to reflect on their perspectives and personal experiences ensures that everyone has an opportunity to engage with the topic and the proposed activities and gives individuals the opportunity to formulate their opinions without being influenced by others.</p>
+
+<h3 id="try">TRY</h3>
+
+<ul>
+<li>Each person spends 3-5 minutes thinking  about the topic/task/activity and taking notes.</li>
+<li>Participants join groups of 4-5 people to discuss their personal reflections and share notes.</li>
+<li>Each group selects some of the ideas they have developed and shares them with other teams to get feedback.</li>
+</ul>
+
+        </div>
+    </div>
+
+    
+        <div class="resourcePageRelatedResources">
+            <h3>Related Resources</h3>
+            <div class="resourcesCard tool">
+                        <div class="resourcesCardHeader">
+    <img src="/website-cities/dev/images/Cat_Icon.svg" alt="Tool">
+
+</div>
+                        <div class="resourcesCardTitle"><a href="/website-cities/dev/resources/idrc-co-design-worksheets/">IDRC Co-design worksheets</a></div>
+                    </div><div class="resourcesCard tool">
+                        <div class="resourcesCardHeader">
+    <img src="/website-cities/dev/images/Cat_Icon.svg" alt="Tool">
+
+</div>
+                        <div class="resourcesCardTitle"><a href="/website-cities/dev/resources/inclusive-city-imaginary/">Inclusive City Imaginary</a></div>
+                    </div><div class="resourcesCard tool">
+                        <div class="resourcesCardHeader">
+    <img src="/website-cities/dev/images/Cat_Icon.svg" alt="Tool">
+
+</div>
+                        <div class="resourcesCardTitle"><a href="/website-cities/dev/resources/urban-hot-spots/">Urban hot spots</a></div>
+                    </div>
+        </div>
+    
+
+    <div id="footer">
+    <div class="logoContainer">
+        <a href="http://idrc.ocadu.ca/" class="logo-idrc" title="Inclusive Design Research Centre">Inclusive Design Research Centre</a>
+    </div>
+    <p>This website is maintained and created by the <a href="https://idrc.ocadu.ca/">Inclusive Design Research Centre</a>.<br />
+    It is distributed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International license</a>.</p>
+</div>
+
+</div>
+
+
+    <!-- Initialise UIO -->
+<script>
+    $(document).ready(function () {
+        var uio = fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
+            terms: {
+                "templatePrefix": "\/website-cities\/dev\/js\/lib\/infusion\/src\/framework\/preferences\/html",
+                "messagePrefix": "\/website-cities\/dev\/js\/lib\/infusion\/src\/framework\/preferences\/messages"
+            },
+            "tocTemplate": "\/website-cities\/dev\/js\/lib\/infusion\/src\/components\/tableOfContents\/html\/TableOfContents.html",
+            "ignoreForToC": {
+                "overviewPanel": ".flc-overviewPanel"
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

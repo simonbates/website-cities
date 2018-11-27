@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sharing our findings - Co-designing Inclusive Cities</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/website-cities/dev/js/lib/infusion/src/framework/preferences/css/Enactors.css" />
+    <link rel="stylesheet" type="text/css" href="/website-cities/dev/js/lib/infusion/src/framework/preferences/css/PrefsEditor.css" />
+    <link rel="stylesheet" type="text/css" href="/website-cities/dev/js/lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
+    <script src="/website-cities/dev/js/lib/infusion/infusion-custom.js"></script>
+    <link rel="stylesheet" href="/website-cities/dev/css/style.css">
+</head>
+<body>
+    <!-- BEGIN markup for Preference Editor -->
+<div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
+    <!--
+        This div is for the sliding panel bar that shows and hides the Preference Editor controls in the mobile view.
+        A separate panel bar for mobile displays is needed to preserver the correct tab order.
+    -->
+    <div class="fl-panelBar fl-panelBar-smallScreen">
+        <span class="fl-prefsEditor-buttons">
+            <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> Show/Hide</button>
+            <button class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+        </span>
+    </div>
+
+    <!-- This is the div that will contain the Preference Editor component -->
+    <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+
+    <!--
+        This div is for the sliding panel bar that shows and hides the Preference Editor controls in the desktop view.
+        A separate panel bar for desktop displays is needed to preserver the correct tab order.
+    -->
+    <div class="fl-panelBar fl-panelBar-wideScreen">
+        <span class="fl-prefsEditor-buttons">
+            <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> Show/Hide</button>
+            <button class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+        </span>
+    </div>
+</div>
+<!-- END markup for Preference Editor -->
+
+
+    
+<div id="body">
+    <div id="ideasHeader">
+    <div class="ideasHeaderContainer">
+        <div class="ideasHeaders"><h1><a href="/website-cities/dev/">Co-designing Inclusive Cities</a></h1></div>
+        <div class="imageContainerIdeas"><img src="/website-cities/dev/images/birds.png" class="img" alt="" /></div>
+    </div>
+</div>
+
+    <div class="navbar">
+    <div
+    class="navbar-section "><a href="/website-cities/dev/">HOME</a></div><div
+
+    class="navbar-section navbar-section-current"><a href="/website-cities/dev/resources/">RESOURCES</a></div><div
+
+    class="navbar-section "><a href="/website-cities/dev/blog/">BLOG</a></div>
+</div>
+
+
+    <div class="resourcePageTitleSection reflection">
+        <div class="resourcePageFormatIcon">
+    <img src="/website-cities/dev/images/Fish_Icon.svg" alt="Reflection">
+
+</div><div
+        class="resourcePageTitleAndDescription">
+            <h2>Sharing our findings</h2>
+            <div class="resourcePageDescription">It is essential to openly share the results of co-design events with the participants and the community.</div>
+        </div>
+    </div>
+
+    <div class="flc-toc-tocContainer toc"></div>
+
+    <div class="resourcePageContentContainer">
+        <div class="resourcePageContent">
+            
+
+<p>To share our findings with the public, the team created summaries of the events and a detailed report of all the synthesized ideas from any of our co-design sessions. Documented notes were synthesized into written documents using a narrative/ storytelling approach, and all ideas were appropriately attributed to responsible groups. The written documents were posted on our website for open access for the participants and others that may be interested.</p>
+
+<p>Artifacts and rough notes created by participants from our led co-design sessions were also incorporated in the online documents along with the reports and made available to the public. However, the artifacts and rough notes from our embedded co-design activities were not shared publicly as part of our agreement to protect the identity of participants in the community. For these co-design sessions, only the synthesized ideas were shared with the public. In addition to the public platform, the final reports were shared directly with our participants and their feedback was encouraged.</p>
+
+<h3 id="try">TRY</h3>
+
+<ul>
+<li>Integrate the participant contributions into a written document that can be shared with the public.</li>
+<li>Determine the terms and conditions discussed with partner organizations to decide how much of the collected information can be made public.</li>
+<li>Share the findings on a public platform that is easily accessible for the public.</li>
+<li>Share the findings directly with participants and partner organizations.</li>
+</ul>
+
+        </div>
+    </div>
+
+    
+        <div class="resourcePageRelatedResources">
+            <h3>Related Resources</h3>
+            <div class="resourcesCard perspective">
+                        <div class="resourcesCardHeader">
+    <img src="/website-cities/dev/images/Bird_Icon.svg" alt="Perspective">
+
+</div>
+                        <div class="resourcesCardTitle"><a href="/website-cities/dev/resources/essential-role-of-open/">Essential role of open</a></div>
+                    </div><div class="resourcesCard perspective">
+                        <div class="resourcesCardHeader">
+    <img src="/website-cities/dev/images/Bird_Icon.svg" alt="Perspective">
+
+</div>
+                        <div class="resourcesCardTitle"><a href="/website-cities/dev/resources/protect-collective-contributions/">Protect collective contributions</a></div>
+                    </div>
+        </div>
+    
+
+    <div id="footer">
+    <div class="logoContainer">
+        <a href="http://idrc.ocadu.ca/" class="logo-idrc" title="Inclusive Design Research Centre">Inclusive Design Research Centre</a>
+    </div>
+    <p>This website is maintained and created by the <a href="https://idrc.ocadu.ca/">Inclusive Design Research Centre</a>.<br />
+    It is distributed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International license</a>.</p>
+</div>
+
+</div>
+
+
+    <!-- Initialise UIO -->
+<script>
+    $(document).ready(function () {
+        var uio = fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
+            terms: {
+                "templatePrefix": "\/website-cities\/dev\/js\/lib\/infusion\/src\/framework\/preferences\/html",
+                "messagePrefix": "\/website-cities\/dev\/js\/lib\/infusion\/src\/framework\/preferences\/messages"
+            },
+            "tocTemplate": "\/website-cities\/dev\/js\/lib\/infusion\/src\/components\/tableOfContents\/html\/TableOfContents.html",
+            "ignoreForToC": {
+                "overviewPanel": ".flc-overviewPanel"
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
