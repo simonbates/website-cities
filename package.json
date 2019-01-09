@@ -1,0 +1,10 @@
+{
+    "name": "website-cities",
+    "private": true,
+    "devDependencies": {
+        "grunt": "1.0.3",
+        "grunt-contrib-clean": "2.0.0",
+        "grunt-contrib-copy": "1.0.0",
+        "infusion": "3.0.0-dev.20181204T213346Z.2ca90f6e6"
+    }
+}

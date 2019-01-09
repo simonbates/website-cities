@@ -2,3 +2,7 @@
 
 /public/
 /resources/_gen/
+
+# Node.js
+
+/node_modules/
